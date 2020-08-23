@@ -50,18 +50,18 @@ async def time_check():
 		now=datetime.strftime(datetime.now(),'%H:%M')
 		print(now)
 		if now == send_time:
-			roll = random.randint(1, 100)
-			if roll < 3:
+			roll = random.randint(1, 100)               # Random Roll:
+			if roll < 5:                                # 5% Thunderstorm
 				message= random.choice(thunder_list)
-			elif roll < 15:
+			elif roll < 15:                             # 10% Rain
 				message= random.choice(rain_list)
-			elif roll < 55:
+			elif roll < 47:                             # 32% Cloudy
 				message= random.choice(cloud_list)
-			elif roll < 80:
+			elif roll < 82:                             # 35% Clear
 				message= random.choice(clear_list)
-			elif roll < 97:
+			elif roll < 97:                             # 15% Windy
 				message= random.choice(wind_list)
-			else:
+			else:                                       # 3% Special
 				message= random.choice(special_list)
 			await message_channel.send(message)
 			time=90
