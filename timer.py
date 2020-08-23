@@ -50,7 +50,7 @@ async def time_check():
 		now=datetime.strftime(datetime.now(),'%H:%M')
 		if now == send_time:
 			roll = random.randint(1, 100)               # Random Roll:
-			print("Today's roll is:" + roll)
+			print("Today's roll is: " + roll)
 			if roll < 5:                                # 5% Thunderstorm
 				message= random.choice(thunder_list)
 			elif roll < 15:                             # 10% Rain
