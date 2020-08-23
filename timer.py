@@ -48,7 +48,7 @@ async def time_check():
 	message_channel= client.get_channel(message_channel_id)
 	while client.is_closed:
 		now=datetime.strftime(datetime.now(),'%H:%M')
-		print(now)
+		# print(now)
 		if now == send_time:
 			roll = random.randint(1, 100)               # Random Roll:
 			if roll < 5:                                # 5% Thunderstorm
