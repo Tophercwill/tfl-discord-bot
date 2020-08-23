@@ -2,8 +2,8 @@ import discord,random,asyncio,os
 from datetime import datetime
 from discord.ext import commands
 
-send_time='16:00' #time is in 24hr format
-message_channel_id= 746966803330367569 #channel ID to send images to
+send_time='16:00' 							#time is in 24hr format
+message_channel_id= 746966803330367569 		#channel ID to send images to
 
 
 client = discord.Client()
