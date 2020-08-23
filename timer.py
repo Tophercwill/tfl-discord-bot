@@ -2,7 +2,7 @@ import discord,random,asyncio,os
 from datetime import datetime
 from discord.ext import commands
 
-send_time='16:00' 							#time is in 24hr format
+send_time='17:00' 							#time is in 24hr format
 message_channel_id= 715757990870777906 		#channel ID to send images to
 
 
@@ -50,7 +50,7 @@ async def time_check():
 		now=datetime.strftime(datetime.now(),'%H:%M')
 		if now == send_time:
 			roll = random.randint(1, 100)               # Random Roll:
-			print("Today's roll is: " + roll)
+			print("Today's roll is: ", roll)
 			if roll < 5:                                # 5% Thunderstorm
 				message= random.choice(thunder_list)
 			elif roll < 15:                             # 10% Rain
